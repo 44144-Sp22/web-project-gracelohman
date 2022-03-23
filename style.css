@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+header, nav, main, {
+  display: block;
+}
+
+body {
+  background-color: #3399CC;
+  color: #666666;
+  font-family: Verdana, Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #4dd2db, #ced6d6, #4dd2db);
+}
+
+header {
+  background-color: #6b6b6b;
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+}
+
+h1 {
+  line-height: 200%;
+  background-position: right;
+  padding-left: 1em;
+  height: 72px;
+  margin-bottom: 0;
+}
+
+nav {
+  font-weight: bold;
+  padding: 0;
+  float: left;
+  width: 160px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 1em;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link {
+  color: #FFFFFF;
+}
+
+nav a:visited {
+  color: #4dd2db;
+}
+
+nav a:hover {
+  color: #6b6b6b;
+}
+
+h2 {
+  color: ##223d45;
+  font-family: "times new roman", serif;
+}
+
+footer {
+  font-size: .70em;
+  font-style: italic;
+  text-align: center;
+  padding: 1em;
+  background-color: #FFFFFF;
+  margin-left: 170px;
+}
+
+main {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1px;
+  padding-top: 1em;
+  background-color: #FFFFFF;
+  margin-left: 170px;
+  display: block;
+}
+
+#wrapper {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #aaf5fa;
+  min-width: 700px;
+  max-width: 1024px;
+  box-shadow: 4px 4px 4px #424242;
+}
+
+#mobile {
+  display: none;
+}
+
+#desktop {
+  display: inline;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  nav {
+    float: none;
+    width: auto;
+    padding-top: 0.01em;
+    padding-bottom: 0.01em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav a {
+    padding-right: 2em;
+  }
+
+  main {
+    padding: 1em;
+    margin-left: 0;
+    font-size: 90%;
+  }
+
+  footer {
+    margin: 0;
+  }
+
+  @media only all and (max-width: 768px) {
+    h1 {
+      height: 100%;
+      font-size: 1.5em;
+      padding-left: 0.3em;
+    }
+
+    nav {
+      padding: 0;
+    }
+
+    nav a {
+      display: block;
+      padding: 0.2em;
+      font-size: 1.1em;
+      border-bottom: 1px;
+      border-color: #ced3d9;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      padding-top: 0.1em;
+      padding-right: 0.6em;
+      padding-bottom: 0.1em;
+      padding-left: 0.4em;
+    }
+
+    footer {
+      padding: 0;
+    }
+
+    #mobile {
+      display: inline;
+    }
+
+    #desktop {
+      display: none;
+    }
+  }
